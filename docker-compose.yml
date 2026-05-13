@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: plannex-backend
     ports:
-      - "8080:8080"
+      - "8083:8083"
     environment:
       - SPRING_DATASOURCE_URL=${DB_URL}
       - SPRING_DATASOURCE_USERNAME=${DB_USERNAME}
