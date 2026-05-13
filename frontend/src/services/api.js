@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8083/api';
+// If VITE_API_URL is set, use it (for AWS). Otherwise fallback to localhost (for local development)
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8083/api';
 
 const api = axios.create({
     baseURL: API_URL,
